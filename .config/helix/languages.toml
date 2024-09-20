@@ -1,3 +1,7 @@
 [[language]]
 name = "cpp"
-formatter = { command = "clang-format"}
+formatter = { command = 'clang-format', args = ['--style', 'Chromium'] }
+
+[[language]]
+name = "c"
+formatter = { command = 'clang-format', args = ['--style', 'Chromium'] }
