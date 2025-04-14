@@ -1,6 +1,7 @@
 eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
 
 export EDITOR="hx"
+export GCM_CREDENTIAL_STORE=plaintext
 
 if status is-interactive
     function y
