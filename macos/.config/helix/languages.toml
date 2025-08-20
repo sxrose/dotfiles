@@ -1,13 +1,17 @@
 [[language]]
 name = "cpp"
-formatter = { command = 'clang-format', args = ['--style', 'Chromium'] }
+formatter = { command = 'clang-format', args = ['--style', 'LLVM'] }
 
 [[language]]
 name = "c"
-formatter = { command = 'clang-format', args = ['--style', 'Chromium'] }
+formatter = { command = 'clang-format', args = ['--style', 'LLVM'] }
 
 [[language]]
 name = "gas"
 file-types = ["s", "S"]
 formatter = { command = 'asmfmt' }
+
+[[language]]
+name = "haskell"
+formatter = { command = 'ormolu', args = [ "--no-cabal" ] }
 
