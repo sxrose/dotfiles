@@ -1,14 +1,16 @@
+set SHELL fish
+set EDITOR hx
+
 eval "$(/opt/homebrew/bin/brew shellenv)"
 
-export EDITOR="hx"
+set PATH "/opt/homebrew/bin:/opt/homebrew/sbin:/usr/bin:/bin:/usr/sbin:/sbin:$PATH"
+set PATH "/Users/sxrose/.local/bin:$PATH"
+set PATH "/opt/homebrew/opt/llvm/bin:$PATH"
+set PATH "/opt/homebrew/opt/openjdk@21/bin:$PATH"
+set PATH "/Users/sxrose/go/bin:$PATH"
 
-export PATH="/Users/sxrose/.local/bin:$PATH"
-export PATH="/opt/homebrew/opt/llvm/bin:$PATH"
-export PATH="/opt/homebrew/opt/openjdk/bin:$PATH"
-export PATH="/Users/sxrose/go/bin:$PATH"
-
-export LDFLAGS="-L/opt/homebrew/opt/llvm/lib -L/opt/homebrew/lib"
-export CPPFLAGS="-I/opt/homebrew/opt/llvm/include -I/opt/homebrew/include"
+set LDFLAGS "-L/opt/homebrew/opt/llvm/lib -L/opt/homebrew/lib"
+set CPPFLAGS "-I/opt/homebrew/opt/llvm/include -I/opt/homebrew/include"
 
 if status is-interactive
     function y

@@ -1,3 +1,12 @@
+[language-server.pyrefly]
+command = "pyrefly"
+args = ["lsp"]
+
+[[language]]
+name = "python"
+language-servers = ["pyrefly"]
+formatter = { command = 'black', args = ['-', '--fast', '--quiet'] }
+
 [[language]]
 name = "cpp"
 formatter = { command = 'clang-format', args = ['--style', 'LLVM'] }
@@ -15,3 +24,10 @@ formatter = { command = 'asmfmt' }
 name = "haskell"
 formatter = { command = 'ormolu', args = [ "--no-cabal" ] }
 
+[[language]]
+name = "java"
+formatter = { command = 'google-java-format', args = [ '-'] }
+
+[[language]]
+name = "prolog"
+file-types = ["pl"]
