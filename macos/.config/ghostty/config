@@ -1,0 +1,7 @@
+theme = "Material Darker"
+
+command = /opt/homebrew/bin/fish
+shell-integration = fish
+font-family = "Iosevka"
+font-style = "Heavy"
+font-size = 15
